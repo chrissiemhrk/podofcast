@@ -11,22 +11,24 @@ const Layout = ({ children }: Props) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <header className="flex items-center justify-between bg-linen px-5 py-5 lg:px-40">
-        <Link href={'/'}>
-          <a>
-            <Image src={Logo} alt="logo" width={70} height={70} />
-          </a>
-        </Link>
-        <nav className="hidden lg:flex lg:w-52 lg:items-center lg:justify-between">
-          <Link href={'#'}>
-            <a className="font-bold">Episodes</a>
+      <header className="flex items-center justify-between bg-linen px-5 py-4 lg:px-40">
+        <nav className="hidden lg:flex lg:w-96 lg:items-center lg:justify-between">
+          <Link href={'/'}>
+            <a>
+              <Image src={Logo} alt="logo" width={70} height={70} />
+            </a>
           </Link>
-          <Link href={'#'}>
-            <a className="font-bold">About</a>
-          </Link>
-          <Link href={'#'}>
-            <a className="font-bold">Blog</a>
-          </Link>
+          <div className="flex w-52 justify-between">
+            <Link href={'#'}>
+              <a className="font-bold">Episodes</a>
+            </Link>
+            <Link href={'#'}>
+              <a className="font-bold">About</a>
+            </Link>
+            <Link href={'#'}>
+              <a className="font-bold">Blog</a>
+            </Link>
+          </div>
         </nav>
         <div className="hidden lg:flex lg:w-80 lg:items-center  lg:justify-between">
           <button className="text-red-500 rounded-lg border-2 border-black px-5 py-2 font-bold">
