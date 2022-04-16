@@ -10,6 +10,7 @@ module.exports = {
       white: '#FFFFFF',
       vermillion: '#CD4631',
       gray: '#646464',
+      aliceBlue: '#EDF3F7',
     },
     extend: {
       boxShadow: {
